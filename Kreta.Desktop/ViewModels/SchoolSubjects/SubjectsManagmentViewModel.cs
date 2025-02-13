@@ -40,6 +40,8 @@ namespace Kreta.Desktop.ViewModels.SchoolSubjects
         {
             //1.d HttpServicen keresztül backend hívás
             List<Subject> subjects = await _httpService.GetAllAsync();
+            //2.a A megérkezett adatokkal újra létrehozzuk a Subjects ObservableCollection
+            Subjects = new ObservableCollection<Subject>(subjects);
         }
     }
 }
