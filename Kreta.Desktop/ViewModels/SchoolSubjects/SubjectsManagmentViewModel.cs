@@ -16,6 +16,11 @@ namespace Kreta.Desktop.ViewModels.SchoolSubjects
         //2. A lekért adatok ebben az adatstruktúrában jelennek meg majd a view-n
         [ObservableProperty]
         private ObservableCollection<Subject> _subjects = new ObservableCollection<Subject>();
+
+        //2.b Adatstruktúra a kiválasztott tantárgynak
+        [ObservableProperty]
+        private Subject _subject = new Subject();
+
         public SubjectsManagmentViewModel()
         {
 
