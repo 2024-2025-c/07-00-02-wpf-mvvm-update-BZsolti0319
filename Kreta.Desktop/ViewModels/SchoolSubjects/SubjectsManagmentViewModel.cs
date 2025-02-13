@@ -19,7 +19,7 @@ namespace Kreta.Desktop.ViewModels.SchoolSubjects
 
         //2.b Adatstruktúra a kiválasztott tantárgynak
         [ObservableProperty]
-        private Subject _subject = new Subject();
+        private Subject _selectedSubject = new Subject();
 
         public SubjectsManagmentViewModel()
         {
